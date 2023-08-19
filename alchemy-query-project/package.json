@@ -1,0 +1,11 @@
+{
+  "name": "alchemy-query-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Thedora Adddeafi Gyambrah",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}

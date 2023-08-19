@@ -1,0 +1,18 @@
+{
+  "name": "transactapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Theodora Addeafi Gyambrah",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "ethereum-cryptography": "^2.1.2",
+    "node-fetch": "^3.2.6"
+  }
+}
