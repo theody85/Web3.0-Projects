@@ -1,0 +1,27 @@
+[
+  {
+    "wallet": "a777b77aac4a63620f97",
+    "pik": "4f39d7a86f79964a7129aba81d3c8fdfec6d2e0e33b3d1cc20bbc3c02c1f2b28",
+    "balance": 50
+  },
+  {
+    "wallet": "8a3eca43b71097039c36",
+    "pik": "c5ab4681481e4b4b805beea8378e59ebbd241f264c536acd64c0a3b22fa77a76",
+    "balance": 320
+  },
+  {
+    "wallet": "9529b66e0f3c7f0bab39",
+    "pik": "83bf15e98f6f10473a91a50ee1cb78ceac814d773f46d01dbb2076f6f44a0c41",
+    "balance": 280
+  },
+  {
+    "wallet": "691e89ace4426b10d222",
+    "pik": "5d614964234ebb8b8e33382e3d4d7f75ca1ee4f79e7f8b0f93b2f8118db00b5c",
+    "balance": 50
+  },
+  {
+    "wallet": "293c1c23bb64146bb491",
+    "pik": "f742bdcbdf31154a0a9d88544d40baaf96f5143016bcdd13a4c054de8817198c",
+    "balance": 300
+  }
+]
