@@ -16,9 +16,9 @@ const getPublicKey = (hashed_msg, signed_msg) =>
   signed_msg.recoverPublicKey(hashed_msg).toRawBytes();
 
 const findPrivateKey = (address) => {
-  const record = records.find((record) => record.wallet === address);
-  if (!record) return null;
-  return record.pik;
+  const record = findRecord(address);
+
+  return record ? record.pik : null;
 };
 
 export const getDigitalSignature = (msg) => {
@@ -35,4 +35,9 @@ export const getDigitalSignature = (msg) => {
     },
     pub_key: toHex(pub_key),
   };
+};
+
+export const findRecord = (address) => {
+  const record = records.find((record) => record.wallet === address);
+  return record ? record : null;
 };

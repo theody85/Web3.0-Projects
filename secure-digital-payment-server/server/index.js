@@ -61,7 +61,6 @@ function performTransaction(res, { sender, recipient, amount }) {
     updateRecords(sender, recipient, amount);
     const updatedSenderRecord = getOwnerRecord(sender);
     res.json({ balance: updatedSenderRecord.balance });
-    // alert('Transaction successful');
   }
 }
 
@@ -84,6 +83,6 @@ function updateRecords(senderAddress, recipientAddress, amount) {
     }
   });
 
-  // console.log(records);
-  writeFileSync(filePath, JSON.stringify(records));
+  console.log(records);
+  // writeFileSync(filePath, JSON.stringify(records));
 }

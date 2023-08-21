@@ -25,13 +25,14 @@ function Wallet({ address, setAddress, balance, setBalance }) {
       <h1>Your Wallet</h1>
 
       <div>
-        <label for="address-box">Wallet Address</label>
+        <label htmlFor="address-box">Wallet Address</label>
         <div id="address-box">
           <input
             placeholder="Enter your wallet address"
             value={address}
             onChange={onChange}
             type="text"
+            required
           />
           <button className="search" onClick={onClick}>
             <img src="/public/search.svg" />
