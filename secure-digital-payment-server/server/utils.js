@@ -31,5 +31,6 @@ export const verifyMsg = (msg, signed_msg, pub_key) => {
     },
     hashMsg(msg),
     pub_key,
+    // '03798822617dec2d7aa699e20f7c5a9dd5b98309fabe0096542ec31543a59516d3',
   );
 };

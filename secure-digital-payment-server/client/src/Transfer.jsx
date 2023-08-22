@@ -22,8 +22,6 @@ function Transfer({ address, setBalance }) {
       recipient,
     };
 
-    console.log(msg);
-
     const { signed_msg, pub_key } = getDigitalSignature(msg);
 
     try {

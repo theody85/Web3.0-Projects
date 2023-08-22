@@ -1,0 +1,11 @@
+{
+  "name": "project02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "ethers": "^6.7.1",
+    "ganache-core": "^2.13.2"
+  }
+}
