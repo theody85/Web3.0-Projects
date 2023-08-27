@@ -1,7 +1,8 @@
 import React from "react";
+import { BlocksTable } from "../components";
 
 const Blocks = () => {
-  return <div>Blocks</div>;
+  return <BlocksTable />;
 };
 
 export default Blocks;
