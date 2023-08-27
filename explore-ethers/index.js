@@ -12,7 +12,6 @@ import {
 const { utils, providers, Wallet } = ethers;
 
 const provider = new providers.Web3Provider(ganacheProvider);
-
 const sender = new Wallet(PRIVATE_KEY_1, provider);
 const employee1 = new Wallet(PRIVATE_KEY_2, provider);
 const employee2 = new Wallet(PRIVATE_KEY_3, provider);
@@ -56,16 +55,18 @@ const employee5 = new Wallet(PRIVATE_KEY_6, provider);
   const recipientAddresses = await findAddresses(sender.address);
   console.log("Test1: ", recipientAddresses);
 
-  //TEST2
-  await payroll(0.5, employee1, [
-    employee2.address,
-    employee3.address,
-    employee4.address,
-    employee5.address,
-  ]);
+  console.log(await provider.getBlockWithTransactions(5));
 
-  const recipientAddresses2 = await findAddresses(employee1.address);
-  console.log("Test2: ", recipientAddresses);
+  //TEST2
+  // await payroll(0.5, employee1, [
+  //   employee2.address,
+  //   employee3.address,
+  //   employee4.address,
+  //   employee5.address,
+  // ]);
+
+  // const recipientAddresses2 = await findAddresses(employee1.address);
+  // console.log("Test2: ", recipientAddresses);
 
   // console.log("Addresses......................");
   // console.log("Sender address: ", sender.address);
@@ -75,31 +76,31 @@ const employee5 = new Wallet(PRIVATE_KEY_6, provider);
   // console.log("Employee4 address: ", employee4.address);
   // console.log("Employee5 address: ", employee5.address);
 
-  console.log("Balances......................");
-  console.log(
-    "after balance sender: ",
-    utils.formatEther(await sender.getBalance()),
-  );
-  console.log(
-    "after balance employee1: ",
-    utils.formatEther(await employee1.getBalance()),
-  );
-  console.log(
-    "after balance employee2: ",
-    utils.formatEther(await employee2.getBalance()),
-  );
-  console.log(
-    "after balance employee3: ",
-    utils.formatEther(await employee3.getBalance()),
-  );
-  console.log(
-    "after balance employee4: ",
-    utils.formatEther(await employee4.getBalance()),
-  );
-  console.log(
-    "after balance employee5: ",
-    utils.formatEther(await employee5.getBalance()),
-  );
+  // console.log("Balances......................");
+  // console.log(
+  //   "after balance sender: ",
+  //   utils.formatEther(await sender.getBalance()),
+  // );
+  // console.log(
+  //   "after balance employee1: ",
+  //   utils.formatEther(await employee1.getBalance()),
+  // );
+  // console.log(
+  //   "after balance employee2: ",
+  //   utils.formatEther(await employee2.getBalance()),
+  // );
+  // console.log(
+  //   "after balance employee3: ",
+  //   utils.formatEther(await employee3.getBalance()),
+  // );
+  // console.log(
+  //   "after balance employee4: ",
+  //   utils.formatEther(await employee4.getBalance()),
+  // );
+  // console.log(
+  //   "after balance employee5: ",
+  //   utils.formatEther(await employee5.getBalance()),
+  // );
 })();
 
 // TODO
@@ -125,7 +126,7 @@ async function payroll(amount, sender, employees) {
   const totalSalary = employees.length * amount;
   const amountInWei = utils.parseUnits(amount.toString(), 18);
 
-  console.log("amountInWei", amountInWei);
+  // console.log("amountInWei", amountInWei);
   // parseEther === parseUnit(18);
 
   if (amount <= 0 || employees.length == 0) return;
