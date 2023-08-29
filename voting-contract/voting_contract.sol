@@ -2,8 +2,6 @@
 
 pragma solidity ^0.8.4;
 
-// You are supposed to complete this assignment by defining appropriate data types
-// And working on the code implementation for the various functions/methods in the contract
 contract Voting {
     struct Candidate {
         uint id;
